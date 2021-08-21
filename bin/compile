@@ -20,6 +20,7 @@ arrow "copied msodbcsqlr17.rll"
 cp "${BUILD_DIR}/.apt/opt/microsoft/msodbcsql17/etc/odbcinst.ini" "${BUILD_DIR}/.apt/usr/lib/odbc/conf/odbcinst.ini" | indent
 arrow "copied odbcinst.ini"
 
+mkdir -p "${BUILD_DIR}/etc" | indent
 mkdir -p "${BUILD_DIR}/.profile.d" | indent
 cp .profile.d/configure-odbc.sh "${BUILD_DIR}/.profile.d" | indent
 arrow "copied profile.d"
